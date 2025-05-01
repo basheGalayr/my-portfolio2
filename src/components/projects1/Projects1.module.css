@@ -1,0 +1,109 @@
+/* .conproject h1{
+    color: green;
+  } */
+  /* .conproject h3{
+    color: orange;
+  } */
+  .conproject{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .swipper_container{
+    width: 100%;
+  }
+  .project1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+  }
+  .project1 h3{
+    color: orange;
+  }
+  .project1 h1{
+    color: green;
+  }
+  .project1 p{
+    color: gray;
+    line-height: 20px;
+    font-weight: bold;
+    padding: 20px;
+  }
+  /* .conproject p{
+   padding: 20px;
+   color: gray;
+   line-height: 20px;
+   font-weight: bold;
+  } */
+  .conproject{
+    opacity: 0;
+      transform: translateY(-100px);
+      animation: slideDown 4s ease forwards;
+  }
+  @keyframes slideDown {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .techslide{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      background-color: white;
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+  }
+  .techimage{
+      width: 200px;
+    height: 200px;
+    object-fit: cover; /* Adjusts the image properly */
+    border-radius: 20%;
+  }
+  .techslide:hover {
+    transform: scale(1.05); /* Slightly enlarge the slide */
+    cursor: pointer;
+  }
+  .techname{
+      font-size: 14px;
+    font-weight: 500;
+    color: #374151; /* Tailwind's gray-700 */
+  }
+
+
+  .heading {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 600;   /* font-semibold */
+    margin-bottom: 1rem; /* mb-4 */
+    text-align: center; /* text-center */
+  }
+
+
+
+
+  @media (max-width: 769px) {
+    .conproject {
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 50px;
+        padding-top: 100px;
+        background-size: cover;
+    }
+    .project1 h1 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+    .project1 p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+    .techimage {
+        width: 150px; /* Adjust image size for smaller screens */
+        height: 150px; /* Adjust image size for smaller screens */
+    }
+  }

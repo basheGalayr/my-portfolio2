@@ -1,0 +1,121 @@
+.containerabout{
+    display: flex;
+    gap: 40px;
+    padding: 70px 0;
+    align-items: center;
+    justify-content: center;
+    /* background: rgb(197, 175, 175); */
+    background-image: url('../About/rage11.jpg');
+    background-size: cover;
+
+    
+
+}
+.aboutdiv2 h1{
+    color: brown;
+    padding-right: 20px;
+    opacity: 0;
+    transform: translateY(-100px);
+    animation: slideDown 4s ease forwards;
+}
+.Aboutimg img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+.Aboutimg{
+    /* padding-left: 10px; */
+    padding-right: 20px;
+    opacity: 0;
+    transform: translateY(-100px);
+    animation: slideDown 4s ease forwards;
+}
+@keyframes slideDown {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.aboutdiv2{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+.aboutdiv2 p{
+    font-weight: bold;
+    line-height: 22px;
+    width: 700px;
+    transition: color 0.3s ease;
+    /* padding-left: 50px; */
+    padding-right: 20px;
+    opacity: 0;
+    color: rgb(155, 74, 44);
+    transform: translateY(-100px);
+    animation: slideDown 4s ease forwards;
+}
+.aboutdiv2 p:hover{
+    color: rgb(18, 18, 78);
+  cursor: pointer
+}
+
+
+
+
+@media (max-width: 800px) {
+    .containerabout{
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 50px;
+        padding-top: 100px;
+        background-size: cover;
+
+    }
+    .aboutdiv2 h1{
+        font-size: 30px;
+    }
+    .aboutdiv2 p{
+        width: 100%;
+        font-size: 20px;
+    }
+    .Aboutimg{
+        padding: 0;
+    }
+    .Aboutimg img{
+        width: 250px;
+        height: 250px;
+        /* display: none; */
+    }
+}
+
+@media (max-width: 769px) {
+    .containerabout {
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 50px;
+        padding-top: 100px;
+        background-size: cover;
+    }
+    .aboutdiv2 h1 {
+        font-size: 30px;
+    }
+    .aboutdiv2 p {
+        width: 100%;
+        font-size: 14px;
+    }
+    .Aboutimg {
+        padding: 0;
+    }
+    .Aboutimg img {
+        width: 250px;
+        height: 250px;
+    }
+    .aboutdiv2 p:hover {
+        color: rgb(18, 18, 78);
+        cursor: pointer;
+    }
+    .aboutdiv2 {
+        padding: 0;
+    }
+}

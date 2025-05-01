@@ -1,0 +1,55 @@
+.contactSection {
+    padding: 40px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .contactInfo p {
+    font-size: 16px;
+    color: #444;
+    cursor: pointer;
+  }
+  
+  .socialLinks a {
+    margin: 0 10px;
+    color: #0077b5;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contactForm input,
+  .contactForm textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .contactForm button {
+    background-color: #0077b5;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  

@@ -1,0 +1,132 @@
+/* Body & container styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav_links{
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+}
+.nav_links li a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+.container {
+  width: 100%;
+  background: rgb(116, 34, 5);
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Navigation bar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Logo styling */
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Hamburger icon (always visible) */
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  display: none;
+}
+
+/* Dropdown menu (appears when hamburger is clicked) */
+.dropdown {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background: rgb(116, 34, 5);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu list items inside dropdown */
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+/* Nav items (links) */
+.menu li {
+  font-size: 14px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Icons (email/phone) */
+ .icon {
+  color: red;
+}
+
+/* --- Mobile Styles --- */
+
+
+/* --- Desktop Styles --- */
+
+/* Desktop nav (ul with links) */
+@media (max-width: 769px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  } 
+  .nav_links{
+    display: none;
+  }
+  .navul {
+    display: flex;
+    gap: 20px;
+    padding-left: 90px;
+    cursor: pointer;
+  }
+
+  .navul li {
+    list-style: none;
+    font-size: 13px;
+  }
+
+  .navul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Display email/phone icons on desktop */
+  .nav2 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+}
